@@ -4,7 +4,7 @@
 
 刚刚完成《机器学习基石》的第一次作业，共20个选择题。其中，前14道考察课程的理解，后6道则需code实现。下面节选了后6道编程题，通过Python实现了，保存在MLFex1.py中。
 
-先上题目。
+# 先上题目。
 
 Question 15
 For Questions 15-20, you will play with PLA and pocket algorithm. First, we use an artificial data set to study PLA. The data set is in
@@ -97,17 +97,12 @@ E   0.4 - 0.6
 
 
 
-函数说明
+# 函数说明
 
+# getRawDataSet(url):
+将数据从网上down下来，存储到当前工作目录下
+针对此exercise， 最终可能保存在当前工作目录下的文件可能有三个：MLFex1_15_train.dat  MLFex1_18_train.dat   MLFex1_18_test.dat
 
-# 将数据从网上down下来，存储到当前工作目录下
-# 针对此exercise， 最终可能保存在当前工作目录下的文件可能有三个：MLFex1_15_train.dat  MLFex1_18_train.dat   MLFex1_18_test.dat
-def getRawDataSet(url):
-    dataSet = urllib2.urlopen(url)
-    filename = 'MLFex1_' + url.split('_')[1] + '_' + url.split('_')[2]
-    with open(filename, 'w') as fr:
-        fr.write(dataSet.read())
-    return filename
     
 
 
