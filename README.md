@@ -14,27 +14,45 @@ https://d396qusza40orc.cloudfront.net/ntumlone%2Fhw1%2Fhw1_15_train.dat
 Each line of the data set contains one (xn,yn) with xn∈R4. The first 4 numbers of the line contains the components of xn orderly, the last number is yn.
 Please initialize your algorithm with w=0 and take sign(0) as −1
 Implement a version of PLA by visiting examples in the naive cycle using the order of examples in the data set. Run the algorithm on the data set. What is the number of updates before the algorithm halts?
+
 ≥201 updates
+
 51 - 200 updates
+
 <10 updates
+
 31 - 50 updates
+
 11 - 30 updates
+
 Question 16
 Implement a version of PLA by visiting examples in fixed, pre-determined random cycles throughout the algorithm. Run the algorithm on the data set. Please repeat your experiment for 2000 times, each with a different random seed. What is the average number of updates before the algorithm halts?
+
 ≥201 updates
+
 11 - 30 updates
+
 51 - 200 updates
+
 31 - 50 updates
+
 <10 updates
+
 Question 17
 Implement a version of PLA by visiting examples in fixed, pre-determined random cycles throughout the algorithm, while changing the update rule to be
 wt+1←wt+ηyn(t)xn(t)
 with η=0.5. Note that your PLA in the previous Question corresponds to η=1. Please repeat your experiment for 2000 times, each with a different random seed. What is the average number of updates before the algorithm halts?
+
 51 - 200 updates
+
 <10 updates
+
 31 - 50 updates
+
 11 - 30 updates
+
 ≥201 updates
+
 Question 18
 Next, we play with the pocket algorithm. Modify your PLA in Question 16 to visit examples purely randomly, and then add the `pocket' steps to the algorithm. We will use
 
@@ -46,24 +64,40 @@ https://d396qusza40orc.cloudfront.net/ntumlone%2Fhw1%2Fhw1_18_test.dat
 
 as the test set for ``verifying'' the g returned by your algorithm (see lecture 4 about verifying). The sets are of the same format as the previous one.
 Run the pocket algorithm with a total of 50 updates on D, and verify the performance of wPOCKET using the test set. Please repeat your experiment for 2000 times, each with a different random seed. What is the average error rate on the test set?
+
 0.6 - 0.8
+
 <0.2
+
 0.4 - 0.6
+
 ≥0.8
+
 0.2 - 0.4
+
 Question 19
 Modify your algorithm in Question 18 to return w50 (the PLA vector after 50 updates) instead of w^ (the pocket vector) after 50 updates. Run the modified algorithm on D, and verify the performance using the test set. Please repeat your experiment for 2000 times, each with a different random seed. What is the average error rate on the test set?
+
 <0.2
+
 ≥0.8
+
 0.4 - 0.6
+
 0.6 - 0.8
+
 0.2 - 0.4
+
 Question 20
 Modify your algorithm in Question 18 to run for 100 updates instead of 50, and verify the performance of wPOCKET using the test set. Please repeat your experiment for 2000 times, each with a different random seed. What is the average error rate on the test set?
+
 <0.2
 0.2 - 0.4
+
 0.6 - 0.8
+
 ≥0.8
+
 0.4 - 0.6
 
 
